@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  # Spatial Database: PostgreSQL 16 + PostGIS
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: urbanflow-postgis
+    restart: always
+    environment:
+      POSTGRES_USER: urbanflow_user
+      POSTGRES_PASSWORD: urbanflow_secret
+      POSTGRES_DB: urbanflow_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U urbanflow_user -d urbanflow_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Backend REST API Service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: urbanflow-backend
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://urbanflow_user:urbanflow_secret@db:5432/urbanflow_db
+      DEFAULT_REGION: "Mumbai & Navi Mumbai Metropolitan Area"
+      DEFAULT_LATITUDE: "19.0760"
+      DEFAULT_LONGITUDE: "72.8777"
+      DEFAULT_ZOOM: "11"
+      ML_MODELS_DIR: "/app/ml_models"
+      DATASETS_DIR: "/app/datasets/sample"
+    volumes:
+      - ./ml_models:/app/ml_models
+      - ./datasets:/app/datasets
+    ports:
+      - "8000:8000"
+
+  # Frontend Web Client
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: urbanflow-frontend
+    restart: always
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+
+volumes:
+  postgis_data:
+
