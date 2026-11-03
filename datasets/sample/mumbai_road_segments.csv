@@ -1,0 +1,39 @@
+segment_id,corridor_name,segment_name,zone,start_lat,start_lon,end_lat,end_lon,center_lat,center_lon,lanes,speed_limit,daily_avg_volume,length_km,historical_risk_score,risk_level
+SEG-MUM-001,Western Express Highway (WEH),Bandra Kalanagar Junction to Santacruz Airport Flyover,Western Suburbs,19.0601,72.8512,19.088,72.854,19.07405,72.8526,6,80,171901,1.87,68.0,High
+SEG-MUM-002,Western Express Highway (WEH),Santacruz Airport Flyover to Andheri WEH Flyover & Gundavali,Western Suburbs,19.088,72.854,19.1197,72.8584,19.10385,72.8562,6,80,153863,2.4,78.5,High
+SEG-MUM-003,Western Express Highway (WEH),Andheri WEH Flyover & Gundavali to Goregaon Hub Mall Junction,Western Suburbs,19.1197,72.8584,19.1578,72.8596,19.13875,72.859,6,80,176705,3.63,86.4,Critical
+SEG-MUM-004,Western Express Highway (WEH),Goregaon Hub Mall Junction to Kandivali Mahindra Flyover,Western Suburbs,19.1578,72.8596,19.2045,72.8612,19.18115,72.8604,6,80,184412,2.03,73.3,High
+SEG-MUM-005,Western Express Highway (WEH),Kandivali Mahindra Flyover to Borivali National Park Junction,Western Suburbs,19.2045,72.8612,19.2291,72.8647,19.2168,72.86295,6,80,161135,1.88,75.9,High
+SEG-MUM-006,Western Express Highway (WEH),Borivali National Park Junction to Dahisar Toll Plaza & Check Naka,Western Suburbs,19.2291,72.8647,19.257,72.868,19.24305,72.86635,6,80,151072,3.16,86.4,Critical
+SEG-MUM-007,Eastern Express Highway (EEH),Sion Circle & Chunabhatti Link to Kurla-CST Road Junction,Eastern Suburbs,19.0435,72.8655,19.0682,72.8821,19.05585,72.8738,6,80,124404,2.34,81.6,Critical
+SEG-MUM-008,Eastern Express Highway (EEH),Kurla-CST Road Junction to Ghatkopar Chedda Nagar Junction,Eastern Suburbs,19.0682,72.8821,19.0815,72.903,19.07485,72.89255,6,80,151519,3.27,76.8,High
+SEG-MUM-009,Eastern Express Highway (EEH),Ghatkopar Chedda Nagar Junction to Vikhroli Godrej Flyover,Eastern Suburbs,19.0815,72.903,19.112,72.926,19.09675,72.9145,6,80,132839,3.39,69.6,High
+SEG-MUM-010,Eastern Express Highway (EEH),Vikhroli Godrej Flyover to Kanjurmarg JVLR Interchange,Eastern Suburbs,19.112,72.926,19.13,72.935,19.121,72.9305,6,80,158460,1.82,67.2,High
+SEG-MUM-011,Eastern Express Highway (EEH),Kanjurmarg JVLR Interchange to Mulund Airoli Bridge Turnoff,Eastern Suburbs,19.13,72.935,19.167,72.955,19.1485,72.945,6,80,158303,3.68,72.0,High
+SEG-MUM-012,Eastern Express Highway (EEH),Mulund Airoli Bridge Turnoff to Thane Teen Hath Naka,Eastern Suburbs,19.167,72.955,19.1872,72.9641,19.1771,72.95955,6,80,138050,2.22,79.2,High
+SEG-MUM-013,Sion-Panvel Highway,Mankhurd Octroi Naka to Vashi Bridge Old & New Creek,Navi Mumbai,19.052,72.931,19.0645,72.977,19.05825,72.954,8,80,204689,2.71,98.0,Critical
+SEG-MUM-014,Sion-Panvel Highway,Vashi Bridge Old & New Creek to Vashi Plaza & Sector 17 Junction,Navi Mumbai,19.0645,72.977,19.072,72.998,19.06825,72.9875,8,80,158008,2.06,92.9,Critical
+SEG-MUM-015,Sion-Panvel Highway,Vashi Plaza & Sector 17 Junction to Sanpada APMC Market Turnoff,Navi Mumbai,19.072,72.998,19.066,73.013,19.069,73.0055,8,80,198764,3.43,73.8,High
+SEG-MUM-016,Sion-Panvel Highway,Sanpada APMC Market Turnoff to Nerul LP Flyover Junction,Navi Mumbai,19.066,73.013,19.034,73.024,19.05,73.0185,8,80,196584,3.77,82.0,Critical
+SEG-MUM-017,Sion-Panvel Highway,Nerul LP Flyover Junction to CBD Belapur Konkan Bhavan,Navi Mumbai,19.034,73.024,19.018,73.041,19.026,73.0325,8,80,181956,4.43,84.7,Critical
+SEG-MUM-018,Sion-Panvel Highway,CBD Belapur Konkan Bhavan to Kharghar Hiranandani Curve,Navi Mumbai,19.018,73.041,19.038,73.069,19.028,73.055,8,80,173440,3.29,87.5,Critical
+SEG-MUM-019,Sion-Panvel Highway,Kharghar Hiranandani Curve to Kalamboli Expressway Interchange,Navi Mumbai,19.038,73.069,19.032,73.104,19.035,73.0865,8,80,197787,3.47,98.0,Critical
+SEG-MUM-020,Palm Beach Road,Vashi Blue Diamond Curve to Moraj Residency Sanpada Junction,Navi Mumbai,19.083,72.993,19.072,73.003,19.0775,72.998,6,60,94223,3.36,68.3,High
+SEG-MUM-021,Palm Beach Road,Moraj Residency Sanpada Junction to Seawoods Grand Central Curve,Navi Mumbai,19.072,73.003,19.019,73.017,19.0455,73.01,6,60,90216,1.92,70.4,High
+SEG-MUM-022,Palm Beach Road,Seawoods Grand Central Curve to NRI Seawoods Complex Signal,Navi Mumbai,19.019,73.017,19.006,73.021,19.0125,73.019,6,60,78061,2.58,68.3,High
+SEG-MUM-023,Palm Beach Road,NRI Seawoods Complex Signal to Belapur Killa Gaon End,Navi Mumbai,19.006,73.021,18.995,73.033,19.0005,73.027,6,60,74284,2.43,57.6,Medium
+SEG-MUM-024,Thane Ghodbunder Road,Kapurbawdi Junction Flyover to Manpada D-Mart Junction,Thane,19.215,72.977,19.238,72.972,19.2265,72.9745,6,60,105636,2.55,86.9,Critical
+SEG-MUM-025,Thane Ghodbunder Road,Manpada D-Mart Junction to Patlipada Dongripada Cut,Thane,19.238,72.972,19.255,72.967,19.2465,72.9695,6,60,124884,2.79,76.4,High
+SEG-MUM-026,Thane Ghodbunder Road,Patlipada Dongripada Cut to Waghbil Flyover Incline,Thane,19.255,72.967,19.268,72.962,19.2615,72.9645,6,60,115326,2.37,81.6,Critical
+SEG-MUM-027,Thane Ghodbunder Road,Waghbil Flyover Incline to Gaimukh Ghat Curve & Viewpoint,Thane,19.268,72.962,19.293,72.943,19.2805,72.9525,6,60,111611,4.33,97.4,Critical
+SEG-MUM-028,Jogeshwari-Vikhroli Link Road (JVLR),Jogeshwari WEH Interchange to SEEPZ Gate No 1 & Central Road,Western Suburbs,19.135,72.855,19.128,72.876,19.1315,72.8655,6,60,114885,3.44,73.4,High
+SEG-MUM-029,Jogeshwari-Vikhroli Link Road (JVLR),SEEPZ Gate No 1 & Central Road to Powai Lake Hiranandani Turnoff,Western Suburbs,19.128,72.876,19.124,72.905,19.126,72.8905,6,60,99147,3.77,68.6,High
+SEG-MUM-030,Jogeshwari-Vikhroli Link Road (JVLR),Powai Lake Hiranandani Turnoff to IIT Bombay Main Gate Signal,Western Suburbs,19.124,72.905,19.126,72.916,19.125,72.9105,6,60,98892,2.82,66.3,High
+SEG-MUM-031,Jogeshwari-Vikhroli Link Road (JVLR),IIT Bombay Main Gate Signal to Kanjurmarg EEH Junction Ramp,Western Suburbs,19.126,72.916,19.131,72.934,19.1285,72.925,6,60,126154,3.53,68.6,High
+SEG-MUM-032,Bandra-Worli Sea Link & Coastal Road,BWSL Bandra Toll Plaza to BWSL Worli Cable Bridge End,South Mumbai,19.043,72.819,19.018,72.815,19.0305,72.817,8,80,96623,3.65,40.0,Low
+SEG-MUM-033,Bandra-Worli Sea Link & Coastal Road,BWSL Worli Cable Bridge End to Worli Seaface Coastal Entry,South Mumbai,19.018,72.815,19.011,72.816,19.0145,72.8155,8,80,104771,3.9,36.8,Low
+SEG-MUM-034,Bandra-Worli Sea Link & Coastal Road,Worli Seaface Coastal Entry to Haji Ali Interchange Tunnel,South Mumbai,19.011,72.816,18.977,72.812,18.994,72.814,8,80,87277,1.89,40.0,Low
+SEG-MUM-035,Bandra-Worli Sea Link & Coastal Road,Haji Ali Interchange Tunnel to Marine Drive Princess Street Flyover,South Mumbai,18.977,72.812,18.944,72.824,18.9605,72.818,8,80,89740,2.52,46.4,Medium
+SEG-MUM-036,Swami Vivekanand Road (S.V. Road),Bandra Lucky Restaurant Junction to Khar Telephone Exchange Signal,Western Suburbs,19.054,72.841,19.07,72.839,19.062,72.84,4,50,68497,4.35,70.3,High
+SEG-MUM-037,Swami Vivekanand Road (S.V. Road),Khar Telephone Exchange Signal to Santacruz Milan Subway Crossing,Western Suburbs,19.07,72.839,19.085,72.842,19.0775,72.8405,4,50,83468,2.65,65.7,High
+SEG-MUM-038,Swami Vivekanand Road (S.V. Road),Santacruz Milan Subway Crossing to Andheri Market & Station Junction,Western Suburbs,19.085,72.842,19.12,72.844,19.1025,72.843,4,50,78497,2.87,79.3,High

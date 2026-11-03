@@ -1,0 +1,245 @@
+@import "leaflet/dist/leaflet.css";
+@import "leaflet.markercluster/dist/MarkerCluster.css";
+@import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'IBM Plex Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'JetBrains Mono', monospace;
+  
+  /* Official Palette Tokens from User Reference Swatch */
+  --color-bg-base: #06141B;
+  --color-surface-1: #11212D;
+  --color-surface-2: #253745;
+  --color-surface-3: #324657;
+  --color-surface-4: #4A5C6A;
+  
+  --color-border-subtle: #253745;
+  --color-border-base: #4A5C6A;
+  --color-border-strong: #9BA8AB;
+  
+  --color-text-main: #CCD0CF;
+  --color-text-muted: #9BA8AB;
+  --color-text-dim: #6c7c88;
+
+  /* Official Brand Accent from URBANFLOW Logo */
+  --color-brand-orange: #FF7A00;
+  --color-brand-orange-light: #FF8A00;
+  --color-brand-orange-dark: #E66A00;
+  
+  /* Harmonized Semantic Risk Indicators */
+  --color-risk-low: #10b981;
+  --color-risk-medium: #f59e0b;
+  --color-risk-high: #f97316;
+  --color-risk-critical: #ef4444;
+}
+
+:root {
+  --app-bg: #06141B;
+  --surface-primary: #11212D;
+  --surface-secondary: #253745;
+  --border-primary: #4A5C6A;
+  --border-subtle: #253745;
+  --text-primary: #CCD0CF;
+  --text-secondary: #9BA8AB;
+  --brand-orange: #FF7A00;
+}
+
+/* Light / Warm Beige Palette Tokens */
+:root.theme-light,
+.theme-light {
+  --app-bg: #F4F1EA;
+  --surface-primary: #FFFFFF;
+  --surface-secondary: #EBE5D8;
+  --border-primary: #D1C9BC;
+  --border-subtle: #DDD7CB;
+  --text-primary: #111827;
+  --text-secondary: #4B5563;
+  --brand-orange: #FF7A00;
+  background-color: #F4F1EA !important;
+  color: #111827 !important;
+}
+
+body {
+  background-color: #06141B;
+  color: #CCD0CF;
+  font-family: 'IBM Plex Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-light body {
+  background-color: #F4F1EA !important;
+  color: #111827 !important;
+}
+
+/* Seamless Global Token Overrides for Light / Warm Beige Theme */
+.theme-light .bg-\[\#06141B\] {
+  background-color: #ECE7DC !important;
+}
+
+.theme-light .bg-\[\#11212D\] {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+.theme-light .bg-\[\#11212D\]\/95 {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+}
+
+.theme-light .bg-\[\#253745\] {
+  background-color: #E2DBD0 !important;
+}
+
+.theme-light .bg-\[\#253745\]\/50 {
+  background-color: rgba(226, 219, 208, 0.6) !important;
+}
+
+.theme-light .border-\[\#253745\] {
+  border-color: #DCD6CC !important;
+}
+
+.theme-light .border-\[\#4A5C6A\] {
+  border-color: #C8C0B2 !important;
+}
+
+.theme-light .border-\[\#253745\]\/60 {
+  border-color: rgba(220, 214, 204, 0.6) !important;
+}
+
+.theme-light .border-\[\#253745\]\/40 {
+  border-color: rgba(220, 214, 204, 0.4) !important;
+}
+
+.theme-light .text-\[\#CCD0CF\] {
+  color: #0F172A !important;
+}
+
+.theme-light .text-\[\#9BA8AB\] {
+  color: #475569 !important;
+}
+
+.theme-light .text-\[\#9BA8AB\]\/70 {
+  color: #64748B !important;
+}
+
+.theme-light input,
+.theme-light select {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #D1C9BC !important;
+}
+
+.theme-light table thead {
+  background-color: #EBE5D8 !important;
+  color: #1E293B !important;
+}
+
+.theme-light table thead th {
+  color: #334155 !important;
+}
+
+.theme-light table th,
+.theme-light table td {
+  border-color: #DDD7CB !important;
+}
+
+.theme-light .hover\:bg-\[\#253745\]:hover {
+  background-color: #E4DED3 !important;
+}
+
+.theme-light .hover\:bg-\[\#1b2b38\]\/40:hover {
+  background-color: rgba(226, 219, 208, 0.5) !important;
+}
+
+.theme-light .leaflet-container {
+  background: #EFEBE2 !important;
+}
+
+.theme-light .leaflet-popup-content-wrapper {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1px solid #D1C9BC !important;
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.12) !important;
+}
+
+.theme-light .leaflet-popup-tip {
+  background: #FFFFFF !important;
+  border-color: #D1C9BC !important;
+}
+
+/* Precision Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #06141B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #253745;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4A5C6A;
+}
+
+/* Professional Leaflet Map Overrides */
+.leaflet-container {
+  background: #06141B !important;
+  font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #11212D !important;
+  color: #CCD0CF !important;
+  border: 1px solid #4A5C6A !important;
+  border-radius: 6px !important;
+  box-shadow: 0 16px 32px -8px rgba(6, 20, 27, 0.95) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: #11212D !important;
+  border-top: 1px solid #4A5C6A !important;
+  border-left: 1px solid #4A5C6A !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  color: #9BA8AB !important;
+  padding: 6px 8px !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: #CCD0CF !important;
+}
+
+/* Custom Marker Cluster Styling */
+.marker-cluster-small,
+.marker-cluster-medium,
+.marker-cluster-large {
+  background-color: rgba(255, 122, 0, 0.25) !important;
+}
+
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div {
+  background-color: #FF7A00 !important;
+  color: #06141B !important;
+  font-weight: 700 !important;
+  font-family: 'IBM Plex Mono', monospace !important;
+}
+
+/* Map tiles subtle blend */
+.leaflet-tile-pane {
+  filter: brightness(0.95) contrast(1.05);
+}

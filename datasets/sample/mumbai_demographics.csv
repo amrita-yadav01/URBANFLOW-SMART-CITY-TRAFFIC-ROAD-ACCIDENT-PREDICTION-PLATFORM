@@ -1,0 +1,6 @@
+zone,ward_code,population,density_per_sqkm,registered_vehicles,public_transit_accessibility_score
+South Mumbai,A-E,3145000,46500.0,820000,88.5
+Western Suburbs,H-R,5480000,32100.0,1640000,82.0
+Eastern Suburbs,L-T,4210000,28900.0,1180000,76.5
+Navi Mumbai,NMMC,1520000,14200.0,710000,71.0
+Thane,TMC,2180000,17800.0,890000,68.0
